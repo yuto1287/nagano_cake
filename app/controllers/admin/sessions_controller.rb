@@ -17,13 +17,13 @@ class Admin::SessionsController < Devise::SessionsController
   # def destroy
   #   super
   # end
-  
+
   def after_sign_in_path_for(resource)
-    
-  end 
-  
+    about_path
+  end
+
   def after_sign_out_path_for(resouce)
-    
+    about_path
   end
 
   # protected
